@@ -1,5 +1,8 @@
 terraform {
-  backend "s3" {}
+  backend "s3" {
+    region = "us-east-1"
+    bucket = "bucket-teste-tc1"
+  }
 
   required_providers {
     aws = {
